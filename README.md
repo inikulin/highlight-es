@@ -10,7 +10,36 @@ npm install highlight-es
 
 ## Usage
 ```js
-// TODO
+const highlight = require('highlight-es');
+
+function testFunc () {
+    const re    = /(.+) awesome$/;
+    const match = 'You are awesome'.match(re);
+
+    return match[1];
+}
+
+const code = testFunc.toString();
+
+console.log('\n' + highlight(code));
+```
+
+ ⬇
+
+![example](https://raw.githubusercontent.com/inikulin/highlight-es/master/media/example.png)
+
+
+You can pass custom renderer to target other medium, e.g.:
+```js
+highlight(code, {
+    string:     str => ...,
+    punctuator: str => ...,
+    keyword:    str => ...,
+    number:     str => ...,
+    regex:      str => ...,
+    comment:    str => ...,
+    invalid:    str => ...
+});
 ```
 
 ## Author

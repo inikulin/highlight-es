@@ -32,7 +32,7 @@ module.exports = function highlight (src, renderer) {
             return value
                 .split(NEWLINE)
                 .map(function (str) {
-                    return renderer.syntax[token.type](str);
+                    return renderer[token.type](str);
                 })
                 .join('\n');
         }
