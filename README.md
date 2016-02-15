@@ -42,5 +42,8 @@ highlight(code, {
 });
 ```
 
+## Related
+[is-es2016-keyword](https://github.com/inikulin/is-es2016-keyword) - Determine if string is an ES2016 keyword.
+
 ## Author
 [Ivan Nikulin](https://github.com/inikulin) (ifaaan@gmail.com)
