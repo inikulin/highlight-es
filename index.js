@@ -1,6 +1,9 @@
 var chalk           = require('chalk');
-var jsTokensRe      = require('js-tokens');
+var jsTokens        = require('js-tokens');
 var isES2016Keyword = require('is-es2016-keyword');
+
+var jsTokensRe = jsTokens.default;
+var matchToToken = jsTokens.matchToToken;
 
 var NEWLINE = /\r\n|[\n\r\u2028\u2029]/;
 
@@ -23,7 +26,7 @@ module.exports = function highlight (src, renderer) {
         for (var i = 0; i < arguments.length; i++)
             match.push(arguments[i]);
 
-        var token = jsTokensRe.matchToToken(match);
+        var token = matchToToken(match);
 
         if (token.type === 'name' && isES2016Keyword(value, true))
             token.type = 'keyword';
