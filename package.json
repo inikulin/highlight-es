@@ -1,6 +1,6 @@
 {
   "name": "highlight-es",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Highlight ECMAScript syntax for the console or any other medium.",
   "main": "index.js",
   "directories": {
@@ -40,7 +40,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "chalk": "^1.1.1",
+    "chalk": "^2.4.0",
     "is-es2016-keyword": "^1.0.0",
     "js-tokens": "^3.0.0"
   }
