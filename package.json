@@ -1,11 +1,8 @@
 {
   "name": "highlight-es",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Highlight ECMAScript syntax for the console or any other medium.",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "files": [
     "index.js"
   ],
